@@ -64,6 +64,7 @@ const reducer = (state = [], action) => {
         .sort((a, b) => b.votes - a.votes)
     case 'INIT_ANECDOTES':
       return action.data
+        .sort((a, b) => b.votes - a.votes)
     default: return state
   }
   return state

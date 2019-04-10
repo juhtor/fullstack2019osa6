@@ -9,9 +9,6 @@ import { connect } from 'react-redux'
 const App = (props) => {
   useEffect(() => {
     props.initializeAnecdotes()
-    // anecdoteService
-    //   .getAll()
-    //   .then(anecdotes => props.initializeAnecdotes(anecdotes))
   }, [])
   return (
     <div>

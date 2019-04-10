@@ -24,7 +24,7 @@ const AnecdoteList = (props) => {
               {anecdote.content}
             </div>
             <div>
-              has {anecdote.votes}
+              has {anecdote.votes} votes
               <button onClick={vote(anecdote)}>vote</button>
             </div>
           </div>
@@ -35,7 +35,6 @@ const AnecdoteList = (props) => {
 }
 
 const anecdotesToShow = ({ anecdotes, filter }) => {
-  console.log('anecdotes to show', anecdotes)
   return anecdotes.filter(anecdote => anecdote.content.indexOf(filter) > -1)
 }
 
